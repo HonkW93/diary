@@ -18,7 +18,7 @@
   const wordcloud_canvas = document.getElementById('wordcloud-canvas')
   wordcloud_canvas.width = document.querySelector('#page').clientWidth - 16
   wordcloud_canvas.height = 350
-  let wordcloud_config = {"list":[["car",1.2,"/tags/car/"],["CaDa",1.1,"/tags/CaDa/"],["积木",1.1,"/tags/积木/"],["车祸",1.1,"/tags/车祸/"],["交通安全",1.1,"/tags/交通安全/"],["switch",1.1,"/tags/switch/"],["加速器",1.1,"/tags/加速器/"],["地区",1.1,"/tags/地区/"],["毕棚沟",1.1,"/tags/毕棚沟/"],["熊猫",1.1,"/tags/熊猫/"],["都江堰",1.1,"/tags/都江堰/"]],"fontFamily":"'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif","fontWeight":400,"gridSize":10,"weightFactor":13,"backgroundColor":"transparent","color":"random-dark"}
+  let wordcloud_config = {"list":[["switch",1.1,"/tags/switch/"],["加速器",1.1,"/tags/加速器/"],["地区",1.1,"/tags/地区/"],["car",1.2,"/tags/car/"],["车祸",1.1,"/tags/车祸/"],["交通安全",1.1,"/tags/交通安全/"],["毕棚沟",1.1,"/tags/毕棚沟/"],["熊猫",1.1,"/tags/熊猫/"],["都江堰",1.1,"/tags/都江堰/"],["CaDa",1.1,"/tags/CaDa/"],["积木",1.1,"/tags/积木/"]],"fontFamily":"'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif","fontWeight":400,"gridSize":10,"weightFactor":13,"backgroundColor":"transparent","color":"random-dark"}
   wordcloud_config.hover = function(item, dimension){
     if (!dimension) {
       wordbox.hidden = true
@@ -31,7 +31,7 @@
   WordCloud(wordcloud_canvas, wordcloud_config);
 }
 initWordCloud();
-document.addEventListener('pjax:success', initWordCloud)</script></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2019 – 2020 </span><span class="with-love" id="animate"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-cloud-line"></use></svg></span><span class="author"> HonkW 💕 JaneR</span></div><div class="powered"><span>由 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 驱动 v5.0.0</span><span class="footer-separator">|</span><span>主题 - <a rel="noopener" href="https://github.com/YunYouJun/hexo-theme-yun" target="_blank"><span>Yun</span></a> v1.2.0</span></div><div class="live_time"><span>HonkW和JaneR写日记</span><span id="display_live_time"></span><span class="moe-text">啦(●'◡'●)</span><script>function blog_live_time() {
+document.addEventListener('pjax:success', initWordCloud)</script></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2019 – 2021 </span><span class="with-love" id="animate"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-cloud-line"></use></svg></span><span class="author"> HonkW 💕 JaneR</span></div><div class="powered"><span>由 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 驱动 v5.0.0</span><span class="footer-separator">|</span><span>主题 - <a rel="noopener" href="https://github.com/YunYouJun/hexo-theme-yun" target="_blank"><span>Yun</span></a> v1.2.0</span></div><div class="live_time"><span>HonkW和JaneR写日记</span><span id="display_live_time"></span><span class="moe-text">啦(●'◡'●)</span><script>function blog_live_time() {
   window.setTimeout(blog_live_time, 1000);
   const start = new Date('2020-08-06T08:00:00');
   const now = new Date();
