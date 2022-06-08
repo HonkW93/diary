@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://diary.honk.wang/"/>
-  <updated>2021-08-11T05:28:56.319Z</updated>
+  <updated>2022-06-08T14:45:17.161Z</updated>
   <id>https://diary.honk.wang/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>阿米洛键盘链接Ubuntu</title>
+    <link href="https://diary.honk.wang/posts/varmilo/"/>
+    <id>https://diary.honk.wang/posts/varmilo/</id>
+    <published>2022-06-08T14:14:06.000Z</published>
+    <updated>2022-06-08T14:45:17.161Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;记录Ubuntu20.04.4 LTS连接我阿米洛蓝牙键盘问题解决过程。。。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/inghoG/article/details/107784364&quot;&gt;win10 + Ubuntu18 双系统
+        
+      
+    
+    </summary>
+    
+    
+      <category term="daily" scheme="https://diary.honk.wang/categories/daily/"/>
+    
+    
+      <category term="varmilo" scheme="https://diary.honk.wang/tags/varmilo/"/>
+    
+      <category term="阿米洛" scheme="https://diary.honk.wang/tags/%E9%98%BF%E7%B1%B3%E6%B4%9B/"/>
+    
+      <category term="键盘" scheme="https://diary.honk.wang/tags/%E9%94%AE%E7%9B%98/"/>
+    
+  </entry>
   
   <entry>
     <title>青城二日游</title>

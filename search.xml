@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>阿米洛键盘链接Ubuntu</title>
+      <link href="/posts/varmilo/"/>
+      <url>/posts/varmilo/</url>
+      
+        <content type="html"><![CDATA[<p>记录Ubuntu20.04.4 LTS连接我阿米洛蓝牙键盘问题解决过程。。。</p><p><a href="https://blog.csdn.net/inghoG/article/details/107784364">win10 + Ubuntu18 双系统 蓝牙键盘连接问题_CosmoSociologist的博客-CSDN博客</a></p><p>此文章的方法比较复杂。。。不想尝试，只想直接读到Key然后配对。。。并不想复制一个Windows的Pin。</p><p><a href="https://blog.csdn.net/weixin_41848012/article/details/105362835">阿米洛蓝牙键盘无线连接Ubuntu16.04和windows10双系统的方法_六六六六神的博客-CSDN博客_阿米洛蓝牙连接教程</a></p><p>本来是可以参考这个教程弄的，奈何<code>grep</code>就是抓不到相关的<code>key</code>，不知道原因是啥。</p><p>后来不知道在哪里收到了可以用Unbuntu软件商店里自带的<code>Bluetooth Manager</code>，我一看哎这个好啊，还带UI界面自己操作的，结果是</p><ol><li>可以顺利连上正在配对的键盘</li><li>点击配对（Pair）之后由于键盘不知道输入什么PIN码，过一会自动就会Pair Error。。</li></ol><p><img src="https://cdn-1301954091.cos.ap-chengdu.myqcloud.com/diary/varmilo/pair.png" alt="registry" loading="lazy"></p><p>所以我就去找使用Terminal的但是可以回显PIN码的方法，找了半天终于给我找到了。。。</p><p><a href="https://www.jianshu.com/p/a89c8a0fdd73">Linux下的蓝牙键盘对接 - 简书 (jianshu.com)</a></p><p>参考上面这篇文章，通过 <code>bluetoothctl -a</code>进入蓝牙管理界面，如果你是已经连接上的情况，也就是前缀为</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[Varmilo VD-2]<span class="comment">#</span></span><br></pre></td></tr></table></figure><p>而不是</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[bluetooth]<span class="comment">#</span></span><br></pre></td></tr></table></figure><p>那就先切换回主界面。通过之前的<code>Bluetooth Manager</code>，或者在这里<code>scan on</code>找到你键盘的MAC地址XX:XX:XX:XX:XX:XX(比如是01:02:03:04:05:06)</p><p>然后直接<code>pair 01:02:03:04:05:06 </code> </p><p>这时界面会回显PIN码，在键盘输入即可，界面会显示<code>Pairing successful</code></p><p><img src="https://cdn-1301954091.cos.ap-chengdu.myqcloud.com/diary/varmilo/connect.png" alt="registry" loading="lazy"></p><p>就连接成功了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> daily </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> varmilo </tag>
+            
+            <tag> 阿米洛 </tag>
+            
+            <tag> 键盘 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>青城二日游</title>
       <link href="/posts/qingcheng/"/>
       <url>/posts/qingcheng/</url>
