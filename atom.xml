@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://diary.honk.wang/"/>
-  <updated>2022-06-08T14:45:17.161Z</updated>
+  <updated>2022-09-08T12:54:49.574Z</updated>
   <id>https://diary.honk.wang/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>home-assistant搭建</title>
+    <link href="https://diary.honk.wang/posts/home-assistant/"/>
+    <id>https://diary.honk.wang/posts/home-assistant/</id>
+    <published>2022-09-05T15:30:24.000Z</published>
+    <updated>2022-09-08T12:54:49.574Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;主要参考&lt;a href=&quot;https://www.bilibili.com/video/BV1UV411273h?p=4&quot;&gt;Home Assistant 安装和基础设置_哔哩哔哩_bilibili&lt;/a&gt;。记录一些坑。&lt;/p&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="daily" scheme="https://diary.honk.wang/categories/daily/"/>
+    
+    
+      <category term="home-assistant" scheme="https://diary.honk.wang/tags/home-assistant/"/>
+    
+      <category term="homeassistant" scheme="https://diary.honk.wang/tags/homeassistant/"/>
+    
+      <category term="ha" scheme="https://diary.honk.wang/tags/ha/"/>
+    
+  </entry>
   
   <entry>
     <title>阿米洛键盘链接Ubuntu</title>

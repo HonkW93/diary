@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>home-assistant搭建</title>
+      <link href="/posts/home-assistant/"/>
+      <url>/posts/home-assistant/</url>
+      
+        <content type="html"><![CDATA[<p>主要参考<a href="https://www.bilibili.com/video/BV1UV411273h?p=4">Home Assistant 安装和基础设置_哔哩哔哩_bilibili</a>。记录一些坑。</p><h2 id="安装home-assistant"><a href="#安装home-assistant" class="headerlink" title="安装home-assistant"></a>安装home-assistant</h2><p>第一步下载<code>home-assistant</code>会超时，参考以下页面，</p><p><a href="https://blog.csdn.net/qq_37788575/article/details/121971646">群晖Docker 安装Jellyfin提示“操作超时解决方法_我在听风的博客-CSDN博客_群晖docker操作超时</a></p><p><a href="https://bbs.hassbian.com/thread-11906-1-1.html">群晖下，DOCKER 下载homeassistant 老是提示超时下载不了 - 『HomeAssistant』求助&amp;解答专区 - 『瀚思彼岸』» 智能家居技术论坛 - Powered by Discuz! (hassbian.com)</a></p><p><a href="https://blog.csdn.net/kevinsingapore/article/details/81388611">(12条消息) docker中拉取指定版本的镜像_kevinsingapore的博客-CSDN博客_docker 拉取指定版本</a></p><p>可通过<code>ssh</code>用电脑进行安装，注意最好安装最新版本，现在我看的最新是<code>2022.8.7</code>。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull homeassistant&#x2F;home-assistant:2022.8.7</span><br></pre></td></tr></table></figure><h2 id="安装HACS"><a href="#安装HACS" class="headerlink" title="安装HACS"></a>安装HACS</h2><p>第一次，我安装的是<code>homeassitant</code>的<code>latest</code>版本（<code>2021.几</code>），然后我直接把<code>HACS</code>（<code>1.6.0</code>版本）文件夹放进<code>custom_components</code>之后添加集成就能看见HACS然后我就点击安装了，然后流程走的是<code>Github</code>授权。可以参考<a href="https://blog.reh.tw/archives/3224">在 Home Assistant 上安裝 HACS | 旋風之音 GoneTone (reh.tw)</a>，跟这个的流程是一样的。</p><p>第二次，我重新安装<code>homeassitant</code>最新的<code>2022.8.7</code>版本，结果死活装不上最新版的<code>HACS</code>（<code>1.27.1</code>版本），结果添加的时候一直显示<code>此集成不支持通过 ui 配置</code>。</p><p><img src="https://cdn-1301954091.cos.ap-chengdu.myqcloud.com/diary/homeassistant/hacs.png" alt="hacs" loading="lazy"></p><p>后面没办法，我就又把<code>HACS</code>文件夹删掉，然后重新下了<code>1.6.0</code>，发现还是不行，于是一番搜索，又根据<a href="https://blog.csdn.net/zhaojy_/article/details/120107322">Home Assistant 2021.6 以后版本HACS安装失败 - 解决方法_阿小飞飞飞的博客-CSDN博客_hacs安装</a>，添加了版本号，重启了一下，突然就可以了。</p><blockquote><p>注意：只有<code>1.6.0</code>这个版本我用这个方法成功了，高版本的就算添加了版本号还是不行。当然也有可能是我重启间隔不够久，具体原因我也不知道。</p></blockquote><p>神奇的是这次走的流程又是添加<code>Github</code>的<code>Personal Key</code>的那一套，不再是<code>Github</code>授权的那一套了。。可以参考<a href="https://www.bilibili.com/read/cv7769256">【教程】Home Assistant智能家居搭建P1-6 - 哔哩哔哩 (bilibili.com)</a>，需要<code>Generate new token</code>。</p><p>安装好了<code>1.6.0</code>的<code>HACS</code>之后，我发现<code>HACS</code>页面上一直显示<code>HACS is starting up HACS is starting up, during this time some information might be missing or incorrect</code>，另外就是让我升级到最新版。但是点击升级后也没有任何反应。。。</p><p><img src="https://cdn-1301954091.cos.ap-chengdu.myqcloud.com/diary/homeassistant/hacs1.png" alt="hacs1" loading="lazy"></p><p>于是，一怒之下我用重新把<code>1.6.0</code>的<code>hacs</code>文件夹删了，换成最新的<code>1.27.1</code>，居然奇迹般的就好了。。。？？？</p><p>真的就很迷。。。感觉就是拿<code>1.6.0</code>诱导出安装界面，把<code>token</code>弄好之后，是没办法升级了，但是你手动升级就可以了，因为安装已经完成了，<code>token</code>也读入了。。</p><h2 id="安装homekit-infused"><a href="#安装homekit-infused" class="headerlink" title="安装homekit-infused"></a>安装homekit-infused</h2><p>需要一个主题模板进行相关设备的展示。选择视频中提到的<code>homekit-infused</code>现在已经是最新的v5了。</p><p>安装方式完全按照官方教导的即可。<a href="https://jimz011.github.io/homekit-infused/installation.html">Homekit Infused 5 | Homekit Infused 5 2022</a></p><p>注意新的v5可能会弹出<code>missing popup-card error </code>，按照<a href="https://github.com/jimz011/homekit-infused/issues/178">popup-card error after update v5 · Issue #178 · jimz011/homekit-infused (github.com)</a>的解释，在集成中添加<code>browser-mod</code>即可。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> daily </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> home-assistant </tag>
+            
+            <tag> homeassistant </tag>
+            
+            <tag> ha </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>阿米洛键盘链接Ubuntu</title>
       <link href="/posts/varmilo/"/>
       <url>/posts/varmilo/</url>
