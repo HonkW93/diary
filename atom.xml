@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://diary.honk.wang/"/>
-  <updated>2024-07-14T11:55:52.547Z</updated>
+  <updated>2024-07-14T13:44:26.944Z</updated>
   <id>https://diary.honk.wang/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>synology</title>
+    <link href="https://diary.honk.wang/posts/synology/"/>
+    <id>https://diary.honk.wang/posts/synology/</id>
+    <published>2024-07-14T13:22:26.000Z</published>
+    <updated>2024-07-14T13:44:26.944Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;记录一些群晖使用的坑。&lt;/p&gt;
+&lt;h2 id=&quot;DDNS-GO&quot;&gt;&lt;a href=&quot;#DDNS-GO&quot; class=&quot;headerlink&quot; title=&quot;DDNS-GO&quot;&gt;&lt;/a&gt;DDNS-GO&lt;/h2&gt;&lt;p&gt;参考&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="日常" scheme="https://diary.honk.wang/categories/%E6%97%A5%E5%B8%B8/"/>
+    
+    
+      <category term="synology" scheme="https://diary.honk.wang/tags/synology/"/>
+    
+      <category term="docker" scheme="https://diary.honk.wang/tags/docker/"/>
+    
+      <category term="ssh" scheme="https://diary.honk.wang/tags/ssh/"/>
+    
+  </entry>
   
   <entry>
     <title>home-assistant搭建</title>

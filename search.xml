@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>synology</title>
+      <link href="/posts/synology/"/>
+      <url>/posts/synology/</url>
+      
+        <content type="html"><![CDATA[<p>记录一些群晖使用的坑。</p><h2 id="DDNS-GO"><a href="#DDNS-GO" class="headerlink" title="DDNS-GO"></a>DDNS-GO</h2><p>参考<a href="https://imnks.com/3330.html">群晖新套件：DDNS-GO 支持阿里云、腾讯云等IPV4、IPV6解析 - 我不是矿神 (imnks.com)</a></p><p>安装后需要路由器开启ipv6。</p><p>华为H6路由器设置公网DDNS访问有问题。参考<a href="https://www.zhihu.com/question/624130177">华为H6路由怎么为NAS设置公网访问？ - 知乎 (zhihu.com)</a></p><p>必须关闭防火墙才能连接，因此用华为H6的路由器无法实现访问。否则防火墙必须完全关闭。不存在放行端口的可能。</p><p><img src="https://cdn-1301954091.cos.ap-chengdu.myqcloud.com/diary/synology/firewall.png" alt="firewall" loading="lazy"></p><h2 id="Docker"><a href="#Docker" class="headerlink" title="Docker"></a>Docker</h2><p>根据之前的经验，docker安装需要使用<code>ssh</code>然后<code>docker pull</code>。</p><p><code>docker pull</code>参考<a href="https://laosu.tech/2024/06/08/%E7%BE%A4%E6%99%96%E4%B8%8ADocker%E4%B8%8B%E8%BD%BD%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/">群晖上Docker下载的几种方式 | 老苏的blog (laosu.tech)</a></p><p><code>ssh</code>参考<a href="https://zhuanlan.zhihu.com/p/399394743">小白教程：如何SSH进入NAS管理 - 知乎 (zhihu.com)</a></p><p>不过现在这一切都不起作用了，因为最近国内的docker镜像出现了问题。唯一找到的解决<strong>镜像无法拉取问题</strong>的办法是通过<a href="https://github.com/DaoCloud/public-image-mirror">public-image-mirror: 很多镜像都在国外。比如 gcr 。国内下载很慢，需要加速。致力于提供连接全世界的稳定可靠安全的容器镜像服务。 (github.com)</a>。</p><p>参考<a href="https://www.bilibili.com/read/cv35314049/">一招快速解决docker镜像无法拉取问题！ - 哔哩哔哩 (bilibili.com)</a>。</p><h2 id="云盘挂载"><a href="#云盘挂载" class="headerlink" title="云盘挂载"></a>云盘挂载</h2><ol><li>阿里云盘</li></ol><p>直接使用<a href="https://imnks.com/3939.html">群晖新套件：阿里云盘WebDAV 可挂载和同步 支持DSM6、7 - 我不是矿神 (imnks.com)</a></p><ol start="2"><li>中国移动云盘，夸克网盘</li></ol><p>使用<code>docker</code>版的<a href="https://alist.nn.ci/zh/">AList</a>。具体可以参考<a href="https://post.smzdm.com/p/a20gvgxp/">群晖NAS套件Alist 挂载中国移动云盘分享_NAS存储_什么值得买 (smzdm.com)</a>。不同端口挂载alist可以参考[alist更改端口号，创建多个alist的方法 – 且吟且行 (yangtengfei.com)](<a href="https://www.yangtengfei.com/2023/09/23/2842.html#:~:text=alist%E6%9B%B4%E6%94%B9%E7%AB%AF%E5%8F%A3%E5%8F%B7%EF%BC%8C%E5%88%9B%E5%BB%BA%E5%A4%9A%E4%B8%AAalist%E7%9A%84%E6%96%B9%E6%B3%95">https://www.yangtengfei.com/2023/09/23/2842.html#:~:text=alist更改端口号，创建多个alist的方法</a> – 且吟且行 系统是istoreos，打开服务，易有云文件管理器，本地文件管理，打开etc，alist文件夹，找到config.json，编辑。,（路径不一样，在容器-编辑-挂载%2F卷 查看） 将端口号5244改成其他的端口。 改完重启alist容器即可，再创建新的容器即可。)，直接修改config.json即可。</p><p>最后都通过<code>webdav</code>挂载到<code>Cloud Sync</code>即可。</p><p><img src="https://cdn-1301954091.cos.ap-chengdu.myqcloud.com/diary/synology/webdav.png" alt="webdav" loading="lazy"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> synology </tag>
+            
+            <tag> docker </tag>
+            
+            <tag> ssh </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>home-assistant搭建</title>
       <link href="/posts/home-assistant/"/>
       <url>/posts/home-assistant/</url>
