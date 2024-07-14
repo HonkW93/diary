@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Love Story</title>
+  <title>Diary</title>
   
   
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://diary.honk.wang/"/>
-  <updated>2022-09-13T10:52:48.085Z</updated>
+  <updated>2024-07-14T11:55:52.547Z</updated>
   <id>https://diary.honk.wang/</id>
   
   <author>
-    <name>HonkW 💕 JaneR</name>
+    <name>HonkW</name>
     
   </author>
   
@@ -21,7 +21,7 @@
     <link href="https://diary.honk.wang/posts/home-assistant/"/>
     <id>https://diary.honk.wang/posts/home-assistant/</id>
     <published>2022-09-05T15:30:24.000Z</published>
-    <updated>2022-09-13T10:52:48.085Z</updated>
+    <updated>2024-07-14T11:55:52.547Z</updated>
     
     <summary type="html">
     
@@ -37,7 +37,7 @@
     </summary>
     
     
-      <category term="daily" scheme="https://diary.honk.wang/categories/daily/"/>
+      <category term="日常" scheme="https://diary.honk.wang/categories/%E6%97%A5%E5%B8%B8/"/>
     
     
       <category term="home-assistant" scheme="https://diary.honk.wang/tags/home-assistant/"/>
@@ -53,7 +53,7 @@
     <link href="https://diary.honk.wang/posts/varmilo/"/>
     <id>https://diary.honk.wang/posts/varmilo/</id>
     <published>2022-06-08T14:14:06.000Z</published>
-    <updated>2022-09-12T03:58:51.713Z</updated>
+    <updated>2024-07-14T11:55:40.132Z</updated>
     
     <summary type="html">
     
@@ -69,7 +69,7 @@
     </summary>
     
     
-      <category term="daily" scheme="https://diary.honk.wang/categories/daily/"/>
+      <category term="日常" scheme="https://diary.honk.wang/categories/%E6%97%A5%E5%B8%B8/"/>
     
     
       <category term="varmilo" scheme="https://diary.honk.wang/tags/varmilo/"/>
@@ -180,7 +180,7 @@
     <link href="https://diary.honk.wang/posts/cada/"/>
     <id>https://diary.honk.wang/posts/cada/</id>
     <published>2020-12-12T02:40:59.000Z</published>
-    <updated>2021-08-11T02:43:52.641Z</updated>
+    <updated>2024-07-14T11:53:57.162Z</updated>
     
     <summary type="html">
     
@@ -214,7 +214,7 @@
     <link href="https://diary.honk.wang/posts/car/"/>
     <id>https://diary.honk.wang/posts/car/</id>
     <published>2020-08-21T03:49:09.000Z</published>
-    <updated>2021-08-11T02:48:58.986Z</updated>
+    <updated>2024-07-14T11:54:42.198Z</updated>
     
     <summary type="html">
     
@@ -248,7 +248,7 @@
     <link href="https://diary.honk.wang/posts/switch/"/>
     <id>https://diary.honk.wang/posts/switch/</id>
     <published>2020-08-16T12:34:02.000Z</published>
-    <updated>2021-08-11T02:43:57.464Z</updated>
+    <updated>2024-07-13T01:59:05.826Z</updated>
     
     <summary type="html">
     
@@ -266,7 +266,7 @@
     </summary>
     
     
-      <category term="switch" scheme="https://diary.honk.wang/categories/switch/"/>
+      <category term="日常" scheme="https://diary.honk.wang/categories/%E6%97%A5%E5%B8%B8/"/>
     
     
       <category term="switch" scheme="https://diary.honk.wang/tags/switch/"/>
